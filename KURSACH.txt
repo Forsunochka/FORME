@@ -1,0 +1,421 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <iomanip>
+#include <algorithm>
+struct DISH
+{
+    std::string marka;
+    std::string model;
+    int dishID, YearOfCreate;
+    std::string color;
+    double height, width, depth;
+    long double weight;
+    double sell;
+};
+void printLine()
+{
+    std::cout << "------------------------------------------------------------------------------------" << std::endl;
+}
+void printMenu1()
+{
+    printLine();
+    std::cout << "Меню:" << std::endl;
+    std::cout << "1. Ввод данных о посудомоечных машинах" << std::endl;
+    std::cout << "2. Выход" << std::endl;
+    printLine();
+}
+void printMenu()
+{
+    printLine();
+    std::cout << "Меню:" << std::endl;
+    std::cout << "1. Удаление информации о посудомоечной машине" << std::endl;
+    std::cout << "2. Вывод информации о посудомоечных машинах" << std::endl;
+    std::cout << "3. Упорядочить информацию о посудомоечных машинах" << std::endl;
+    std::cout << "4. Поиск посудомоечной машины по серийному номеру" << std::endl;
+    std::cout << "5. Вывод марки и модели посудомоечной машины определенного года" << std::endl;
+    std::cout << "6. Редактирование информации о посудомоечной машине" << std::endl;
+    std::cout << "7. Сохранить данные" << std::endl;
+    std::cout << "8. Выход" << std::endl;
+    
+    printLine();
+}
+void inputDishes(DISH* dishes, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        std::cout << "Введите данные о посудомоечной машине " << i + 1 << ":" << std::endl;
+        std::cout << "Серийный номер: ";
+        do {
+            std::cin >> dishes[i].dishID;
+            if (dishes[i].dishID <= 0)
+            {
+                std::cout << "Введите правильный серийный номер: ";
+            }
+        } while (dishes[i].dishID <= 0);
+        std::cin.ignore();
+        std::cout << "Марка: ";
+        getline(std::cin, dishes[i].marka);
+        std::cout << "Модель: ";
+        getline(std::cin, dishes[i].model);
+        std::cout << "Год производства: ";
+        do {
+            std::cin >> dishes[i].YearOfCreate;
+            if (dishes[i].YearOfCreate > 2024 || dishes[i].YearOfCreate < 1886)
+            {
+                std::cout << "Ведено неверное значение года. Введите правильное значение: ";
+            }
+        } while (dishes[i].YearOfCreate > 2024 || dishes[i].YearOfCreate < 1886);
+        std::cout << "Цвет: ";
+        std::cin >> dishes[i].color;
+        std::cout << "Высота(см): ";
+        std::cin >> dishes[i].height;
+        std::cout << "Ширина(см): ";
+        std::cin >> dishes[i].width;
+        std::cout << "Глубина(см): ";
+        std::cin >> dishes[i].depth;
+        std::cout << "Вес(кг): ";
+        std::cin >> dishes[i].weight;
+        std::cout << "Цена(бел.руб): ";
+        do {
+            std::cin >> dishes[i].sell;
+            if (dishes[i].sell <= 0)
+            {
+                std::cout << "Цена не может быть отрицательна или равна нулю. Введите правильное значение: ";
+            }
+        } while (dishes[i].sell <= 0);
+
+        printLine();
+    }
+}
+void printDishes(DISH* dishes, int n)
+{
+    printLine();
+    std::cout << std::setw(15) << "Серийный номер"
+        << std::setw(15) << "Марка"
+        << std::setw(15) << "Модель"
+        << std::setw(18) << "Год производства"
+        << std::setw(15) << "Цвет"
+        << std::setw(15) << "Высота(см)"
+        << std::setw(15) << "Ширина(см)"
+        << std::setw(15) << "Глубина(см)"
+        << std::setw(15) << "Вес(кг)"
+        << std::setw(15) << "Цена(бел.руб)"
+        << std::endl;
+    for (int i = 0; i < n; i++)
+    {
+        std::cout << std::setw(15) << dishes[i].dishID
+            << std::setw(15) << dishes[i].marka
+            << std::setw(15) << dishes[i].model
+            << std::setw(18) << dishes[i].YearOfCreate
+            << std::setw(15) << dishes[i].color
+            << std::setw(15) << dishes[i].height
+            << std::setw(15) << dishes[i].width
+            << std::setw(15) << dishes[i].depth
+            << std::setw(15) << dishes[i].weight
+            << std::setw(15) << dishes[i].sell
+            << std::endl;
+    }
+    printLine();
+}
+bool compareByMarks(const DISH& d1, const DISH& d2)
+{
+    return d1.marka < d2.marka;
+}
+void sortDishes(DISH* dishes, int n)
+{
+    std::sort(dishes, dishes + n, compareByMarks);
+}
+void searchByDishID(DISH* dishes, int n, int id)
+{
+    for (int i = 0; i < n; i++)
+    {
+        if (dishes[i].dishID == id)
+        {
+            std::cout << "Посудомоечная машина с серийным номером " << id << " найдена:" << std::endl;
+            std::cout << std::setw(15) << "Серийный номер"
+                << std::setw(15) << "Марка"
+                << std::setw(15) << "Модель"
+                << std::setw(18) << "Год производства"
+                << std::setw(15) << "Цвет"
+                << std::setw(15) << "Высота(см)"
+                << std::setw(15) << "Ширина(см)"
+                << std::setw(15) << "Глубина(см)"
+                << std::setw(15) << "Вес(кг)"
+                << std::setw(15) << "Цена(бел.руб)"
+                << std::endl;
+            std::cout << std::setw(15) << dishes[i].dishID
+                << std::setw(15) << dishes[i].marka
+                << std::setw(15) << dishes[i].model
+                << std::setw(18) << dishes[i].YearOfCreate
+                << std::setw(15) << dishes[i].color
+                << std::setw(15) << dishes[i].height
+                << std::setw(15) << dishes[i].width
+                << std::setw(15) << dishes[i].depth
+                << std::setw(15) << dishes[i].weight
+                << std::setw(15) << dishes[i].sell
+                << std::endl;
+            return;
+        }
+    }
+    std::cout << "Посудомоечная машина с серийным номером " << id << " не найдена" << std::endl;
+}
+void printDishesWithYear(DISH* dishes, int n, int year)
+{
+    bool found = false;
+    printLine();
+    std::cout << "Посудомоечные машины " << year << "-го года:" << std::endl;
+    for (int i = 0; i < n; i++)
+    {
+        int currentYear = dishes[i].YearOfCreate;
+        if (currentYear == year)
+        {
+            std::cout << "Серийный номер:" << dishes[i].dishID << "  Марка:" << dishes[i].marka << "  Модель:" << dishes[i].model << std::endl;
+            found = true;
+        }
+    }
+    if (!found)
+    {
+        std::cout << "Посудомоечных машин " << year << "-го года не найдено" << std::endl;
+    }
+    printLine();
+}
+void editDishInfo(DISH* dishes, int n, int id)
+{
+    for (int i = 0; i < n; i++)
+    {
+        if (dishes[i].dishID == id)
+        {
+            std::cout << "Введите новые данные для посудомоечной машины с серийным номером " << id << ":" << std::endl;
+            std::cin.ignore();
+            std::cout << "Марка: ";
+            getline(std::cin, dishes[i].marka);
+            std::cout << "Модель: ";
+            getline(std::cin, dishes[i].model);
+            std::cout << "Год производства: ";
+            do {
+                std::cin >> dishes[i].YearOfCreate;
+                if (dishes[i].YearOfCreate > 2024 || dishes[i].YearOfCreate < 1886)
+                {
+                    std::cout << "Ведено неверное значение года. Введите правильное значение: ";
+                }
+            } while (dishes[i].YearOfCreate > 2024 || dishes[i].YearOfCreate < 1886);
+            std::cin.ignore();
+            std::cout << "Цвет: ";
+            std::cin >> dishes[i].color;
+            std::cout << "Высота(см): ";
+            std::cin >> dishes[i].height;
+            std::cout << "Ширина(см): ";
+            std::cin >> dishes[i].width;
+            std::cout << "Глубина(см): ";
+            std::cin >> dishes[i].depth;
+            std::cout << "Вес(кг): ";
+            std::cin >> dishes[i].weight;
+            std::cout << "Цена(бел.руб): ";
+            std::cin >> dishes[i].sell;
+            printLine();
+            std::cout << "Информация о посудомоечной машине с серийным номером " << id << " успешно обновлена." << std::endl;
+            printLine();
+            return;
+        }
+    }
+    std::cout << "Посудомоечная машина с серийным номером " << id << " не найдена" << std::endl;
+}
+
+// Функция для сохранения данных в текстовый файл
+void saveDataToFile(const DISH* dishes, int n) {
+    std::ofstream outputFile("result.txt", std::ios::app); // Открываем файл для добавления данных в конец файла
+
+    if (!outputFile) {
+        std::cerr << "Не удалось открыть файл для записи." << std::endl;
+        return;
+    }
+
+    for (int i = 0; i < n; ++i) {
+        outputFile << std::setw(15) << "Серийный номер"
+            << std::setw(15) << "Марка"
+            << std::setw(15) << "Модель"
+            << std::setw(18) << "Год производства"
+            << std::setw(15) << "Цвет"
+            << std::setw(15) << "Высота(см)"
+            << std::setw(15) << "Ширина(см)"
+            << std::setw(15) << "Глубина(см)"
+            << std::setw(15) << "Вес(кг)"
+            << std::setw(15) << "Цена(бел.руб)"
+            << std::endl;
+        outputFile << std::setw(15) << dishes[i].dishID
+            << std::setw(15) << dishes[i].marka
+            << std::setw(15) << dishes[i].model
+            << std::setw(18) << dishes[i].YearOfCreate
+            << std::setw(15) << dishes[i].color
+            << std::setw(15) << dishes[i].height
+            << std::setw(15) << dishes[i].width
+            << std::setw(15) << dishes[i].depth
+            << std::setw(15) << dishes[i].weight
+            << std::setw(15) << dishes[i].sell
+            << std::endl;
+    }
+
+    outputFile.close();
+    std::cout << "Данные успешно сохранены в файл result.txt" << std::endl;
+}
+
+
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int choice;
+    int i = 0;
+    int n = 0;
+    DISH* dishes = nullptr;
+    bool isDataEntered = false;
+
+    do {
+        printMenu1();
+        std::cout << "Выберите действие: ";
+        std::cin >> choice;
+        printLine();
+
+        switch (choice) {
+        case 1:
+            if (isDataEntered) {
+                std::cout << "Данные уже введены" << std::endl;
+            }
+            else {
+                std::cout << "Введите количество посудомоечных машин: ";
+                do {
+                    std::cin >> n;
+                    if (n < 0)
+                    {
+                        std::cout << "Число машин не может быть отрицательным. Введите корректное значение: ";
+                    }
+                } while (n < 0);
+                printLine();
+                delete[] dishes;
+                dishes = new DISH[n];
+                inputDishes(dishes, n);
+                isDataEntered = true;
+            }
+            break;
+        case 2:
+            std::cout << "Программа завершена" << std::endl;
+            printLine();
+            break;
+        default:
+            std::cout << "Неверный выбор. Повторите попытку." << std::endl;
+            break;
+        }
+    } while (choice != 2 && !isDataEntered);
+    if (isDataEntered) {
+        do {
+            printMenu();
+            std::cout << "Выберите действие: ";
+            std::cin >> choice;
+
+            switch (choice)
+            {
+            case 1:
+            {int codeToDelete;
+            std::cout << "Введите серийный номер посудомоечной машины для удаления: ";
+            std::cin >> codeToDelete;
+
+            bool found = false;
+            for (int i = 0; i < n; ++i) {
+                if (dishes[i].dishID == codeToDelete) {
+                    found = true;
+                    for (int j = i; j < n - 1; ++j) {
+                        dishes[j] = dishes[j + 1];
+                    }
+                    n--;
+                    std::cout << "Посудомоечная машина с серийным номером " << codeToDelete << " успешно удалена" << std::endl;
+                    break;
+                }
+            }
+
+            if (!found) {
+                std::cout << "Посудомоечная машина с серийным номером " << codeToDelete << " не найдена." << std::endl;
+            }
+            break; }
+            case 2:
+            { if (n > 0)
+            {
+                printDishes(dishes, n);
+            }
+            else
+            {
+                std::cout << "Нет данных о посудомоечных машинах, для начала введите данные" << std::endl;
+            }
+            break; }
+            case 3:
+            {if (n > 0)
+            {
+                sortDishes(dishes, n);
+                std::cout << "Информация о посудомоечных машинах упорядочена в алфавитном порядке (по марке)" << std::endl;
+            }
+            else
+            {
+                std::cout << "Нет данных о посудомоечных машинах. Сначала введите данные." << std::endl;
+            }
+            break; }
+            case 4:
+            {if (n > 0)
+            {
+                int id;
+                std::cout << "Введите серийный номер посудомоечной машины: ";
+                std::cin >> id;
+                printLine();
+                searchByDishID(dishes, n, id);
+            }
+            else
+            {
+                std::cout << "Нет данных о посудомоечных машинах, для начала введите данные" << std::endl;
+            }
+            break; }
+            case 5:
+            {if (n > 0)
+            {
+                int year;
+                std::cout << "Введите год производства посудомоечной машины для поиска: ";
+                std::cin >> year;
+                printLine();
+                printDishesWithYear(dishes, n, year);
+            }
+            else
+            {
+                std::cout << "Нет данных о посудомоечных машинах, для начала введите данные" << std::endl;
+            }
+            break; }
+            case 6:
+            {if (n > 0)
+            {
+                int id;
+                std::cout << "Введите серийный номер посудомоечной машины для редактирования: ";
+                std::cin >> id;
+                printLine();
+                editDishInfo(dishes, n, id);
+            }
+            else
+            {
+                std::cout << "Нет данных о посудомоечных машинах, для начала введите данные" << std::endl;
+            }
+            break; }
+            case 7:
+            {saveDataToFile(dishes, n);
+            break; }
+            case 8:
+            {std::cout << "Программа завершена" << std::endl;
+            printLine();
+            break; }
+            default:
+            { std::cout << "Неверный выбор. Повторите попытку." << std::endl;
+            break; }
+            }
+
+        } while (choice != 7);
+    }
+    delete[] dishes;
+
+    return 0;
+}
