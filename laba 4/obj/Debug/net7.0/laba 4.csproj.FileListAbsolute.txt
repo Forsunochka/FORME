@@ -1,0 +1,14 @@
+E:\PROJECT\BUBNA\laba 4\bin\Debug\net7.0\laba 4.exe
+E:\PROJECT\BUBNA\laba 4\bin\Debug\net7.0\laba 4.deps.json
+E:\PROJECT\BUBNA\laba 4\bin\Debug\net7.0\laba 4.runtimeconfig.json
+E:\PROJECT\BUBNA\laba 4\bin\Debug\net7.0\laba 4.dll
+E:\PROJECT\BUBNA\laba 4\bin\Debug\net7.0\laba 4.pdb
+E:\PROJECT\BUBNA\laba 4\obj\Debug\net7.0\laba 4.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROJECT\BUBNA\laba 4\obj\Debug\net7.0\laba 4.AssemblyInfoInputs.cache
+E:\PROJECT\BUBNA\laba 4\obj\Debug\net7.0\laba 4.AssemblyInfo.cs
+E:\PROJECT\BUBNA\laba 4\obj\Debug\net7.0\laba 4.csproj.CoreCompileInputs.cache
+E:\PROJECT\BUBNA\laba 4\obj\Debug\net7.0\laba 4.dll
+E:\PROJECT\BUBNA\laba 4\obj\Debug\net7.0\refint\laba 4.dll
+E:\PROJECT\BUBNA\laba 4\obj\Debug\net7.0\laba 4.pdb
+E:\PROJECT\BUBNA\laba 4\obj\Debug\net7.0\laba 4.genruntimeconfig.cache
+E:\PROJECT\BUBNA\laba 4\obj\Debug\net7.0\ref\laba 4.dll

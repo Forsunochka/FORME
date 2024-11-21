@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\PROJECT\\BUBNA\\LABA2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{067CAA69-E8B8-4B11-AA09-41E845142908}|LABA2.csproj|e:\\project\\bubna\\laba2\\numbershelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067CAA69-E8B8-4B11-AA09-41E845142908}|LABA2.csproj|solutionrelative:numbershelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067CAA69-E8B8-4B11-AA09-41E845142908}|LABA2.csproj|e:\\project\\bubna\\laba2\\rational.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067CAA69-E8B8-4B11-AA09-41E845142908}|LABA2.csproj|solutionrelative:rational.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067CAA69-E8B8-4B11-AA09-41E845142908}|LABA2.csproj|e:\\project\\bubna\\laba2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067CAA69-E8B8-4B11-AA09-41E845142908}|LABA2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:00:59.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rational.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA2\\Rational.cs",
+              "RelativeDocumentMoniker": "Rational.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA2\\Rational.cs",
+              "RelativeToolTip": "Rational.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAAEEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:00:59.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NumbersHelper.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA2\\NumbersHelper.cs",
+              "RelativeDocumentMoniker": "NumbersHelper.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA2\\NumbersHelper.cs",
+              "RelativeToolTip": "NumbersHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:00:59.515Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

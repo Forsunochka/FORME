@@ -1,0 +1,144 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\PROJECT\\BUBNA\\LABA 4.1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|e:\\project\\bubna\\laba 4.1\\ruble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|solutionrelative:ruble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|e:\\project\\bubna\\laba 4.1\\iconvertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|solutionrelative:iconvertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|e:\\project\\bubna\\laba 4.1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|e:\\project\\bubna\\laba 4.1\\pound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|solutionrelative:pound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|e:\\project\\bubna\\laba 4.1\\koupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|solutionrelative:koupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|e:\\project\\bubna\\laba 4.1\\tugrik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|solutionrelative:tugrik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|e:\\project\\bubna\\laba 4.1\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA48925C-71BA-4CB5-8EB5-5CA82D9E9889}|LABA 4.1.csproj|solutionrelative:wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:39:50.2Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Koupon.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Koupon.cs",
+              "RelativeDocumentMoniker": "Koupon.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Koupon.cs",
+              "RelativeToolTip": "Koupon.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:53:06.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pound.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Pound.cs",
+              "RelativeDocumentMoniker": "Pound.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Pound.cs",
+              "RelativeToolTip": "Pound.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:52:41.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ruble.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Ruble.cs",
+              "RelativeDocumentMoniker": "Ruble.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Ruble.cs",
+              "RelativeToolTip": "Ruble.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:52:10.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tugrik.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Tugrik.cs",
+              "RelativeDocumentMoniker": "Tugrik.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Tugrik.cs",
+              "RelativeToolTip": "Tugrik.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:50:52.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Wallet.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Wallet.cs",
+              "RelativeDocumentMoniker": "Wallet.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA 4.1\\Wallet.cs",
+              "RelativeToolTip": "Wallet.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:49:56.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IConvertable.cs",
+              "DocumentMoniker": "E:\\PROJECT\\BUBNA\\LABA 4.1\\IConvertable.cs",
+              "RelativeDocumentMoniker": "IConvertable.cs",
+              "ToolTip": "E:\\PROJECT\\BUBNA\\LABA 4.1\\IConvertable.cs",
+              "RelativeToolTip": "IConvertable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T07:49:02.008Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

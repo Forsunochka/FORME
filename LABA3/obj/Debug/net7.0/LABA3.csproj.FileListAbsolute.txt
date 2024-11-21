@@ -1,0 +1,14 @@
+E:\PROJECT\BUBNA\LABA3\bin\Debug\net7.0\LABA3.exe
+E:\PROJECT\BUBNA\LABA3\bin\Debug\net7.0\LABA3.deps.json
+E:\PROJECT\BUBNA\LABA3\bin\Debug\net7.0\LABA3.runtimeconfig.json
+E:\PROJECT\BUBNA\LABA3\bin\Debug\net7.0\LABA3.dll
+E:\PROJECT\BUBNA\LABA3\bin\Debug\net7.0\LABA3.pdb
+E:\PROJECT\BUBNA\LABA3\obj\Debug\net7.0\LABA3.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROJECT\BUBNA\LABA3\obj\Debug\net7.0\LABA3.AssemblyInfoInputs.cache
+E:\PROJECT\BUBNA\LABA3\obj\Debug\net7.0\LABA3.AssemblyInfo.cs
+E:\PROJECT\BUBNA\LABA3\obj\Debug\net7.0\LABA3.csproj.CoreCompileInputs.cache
+E:\PROJECT\BUBNA\LABA3\obj\Debug\net7.0\LABA3.dll
+E:\PROJECT\BUBNA\LABA3\obj\Debug\net7.0\refint\LABA3.dll
+E:\PROJECT\BUBNA\LABA3\obj\Debug\net7.0\LABA3.pdb
+E:\PROJECT\BUBNA\LABA3\obj\Debug\net7.0\LABA3.genruntimeconfig.cache
+E:\PROJECT\BUBNA\LABA3\obj\Debug\net7.0\ref\LABA3.dll

@@ -1,0 +1,14 @@
+E:\PROJECT\BUBNA\LABA2.1\obj\Debug\net7.0\LABA2.1.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROJECT\BUBNA\LABA2.1\obj\Debug\net7.0\LABA2.1.AssemblyInfoInputs.cache
+E:\PROJECT\BUBNA\LABA2.1\obj\Debug\net7.0\LABA2.1.AssemblyInfo.cs
+E:\PROJECT\BUBNA\LABA2.1\obj\Debug\net7.0\LABA2.1.csproj.CoreCompileInputs.cache
+E:\PROJECT\BUBNA\LABA2.1\bin\Debug\net7.0\LABA2.1.exe
+E:\PROJECT\BUBNA\LABA2.1\bin\Debug\net7.0\LABA2.1.deps.json
+E:\PROJECT\BUBNA\LABA2.1\bin\Debug\net7.0\LABA2.1.runtimeconfig.json
+E:\PROJECT\BUBNA\LABA2.1\bin\Debug\net7.0\LABA2.1.dll
+E:\PROJECT\BUBNA\LABA2.1\bin\Debug\net7.0\LABA2.1.pdb
+E:\PROJECT\BUBNA\LABA2.1\obj\Debug\net7.0\LABA2.1.dll
+E:\PROJECT\BUBNA\LABA2.1\obj\Debug\net7.0\refint\LABA2.1.dll
+E:\PROJECT\BUBNA\LABA2.1\obj\Debug\net7.0\LABA2.1.pdb
+E:\PROJECT\BUBNA\LABA2.1\obj\Debug\net7.0\LABA2.1.genruntimeconfig.cache
+E:\PROJECT\BUBNA\LABA2.1\obj\Debug\net7.0\ref\LABA2.1.dll
